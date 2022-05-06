@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="C:\Users\fri0199289\Downloads\HTML e CSS\Estilos\style5.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="i"> 
+        <li>Acordar</li>
+        <li>Escovar os dentes</li>
+        <li>Colocar roupa</li>
+        <li>Comer</li>
+        <li>Ir para a escola</li>
+        <li>Almoçar</li>
+        <li>Voltar para a escola</li>
+        <li>Voltar para casa</li>
+    </ol>
+
+    <h3>Outras listas ordenadas</h3>
+    <ol start="7">
+        <li>primeiro item</li>
+        <li>segundo item</li>
+        <li>terceiro item</li>
+    </ol>
+    <br>
+    <ol>
+        <li>Linguagens antigas</li> 
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+       <li>Linguagens novas</li>
+       <ol type="a" start="5"> 
+           <li>Php</li>
+           <li>Python</li>
+           <li>JavaScript</li>
+           <li>Kotlin</li>
+       </ol>
+    </ol>
+    <br>
+    <ol>
+        <li>primeiro item</li>
+        <li>segundo item      <!-- Veja que a tag de fechamento </li> não é colocada aqui! -->
+          <ol>
+            <li>segundo item primeiro subitem</li>
+            <li>segundo item segundo subitem</li>
+            <li>segundo item terceiro subitem</li>
+          </ol>
+        </li>                <!-- Aqui está a tag de fechamento-->
+        <li>terceiro item</li>
+    </ol> 
+
+    <h2>Listas não ordenadas</h2>
+    <ul type="square">
+       <li>Pão</li>
+       <li>Leite</li>
+       <li>Tomate</li>
+       <li>Alface</li>
+       <li>Manteiga</li>
+       <li>Arroz</li>
+       <li>Feijão</li>
+    </ul>
+
+    <ul type="circle">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+
+    <ul type="none">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+
+    <h3>Lista ordenada e não ordenada aninhada</h3>
+    <ol>
+        <li>primeiro item</li>
+        <li>segundo item      <!-- Observe que a tag de fechamento </li> não é colocada aqui! -->
+          <ul>
+            <li>segundo item primeiro subitem</li>
+            <li>segundo item segundo subitem</li>
+            <li>segundo item terceiro subitem</li>
+          </ul>
+        </li>                <!-- Aqui está a tag de fechamento </li> -->
+        <li>terceiro item</li>
+      </ol>
+    
+      <h2>Lista de definições</h2>
+      <dl>
+         <dt>HTML</dt>
+         <dd>Linguagem de marcação para a criação do conteúdo de um site</dd>
+         <dt>CSS</dt>
+         <dd>Linguagem de marcação para a criação do design de um site</dd>
+         <dt>JavaScript</dt>
+         <dd>Linguagem de programação para a criação da interatividade de um site</dd>
+      </dl>
+
+</body>
+</html>
+
+<!--Type="1" – Algarismos do sistema numérico cardinal (1, 2, 3 etc.)
+Type="i" – Algarismos em minúscula do sistema numérico romano (i, ii, iii etc.)
+Type="I" - Algarismos em maiúscula do sistema numérico romano (I, II, III etc.)
+Type="a" – Caracteres em minúscula do sistema alfabético (a, b, c etc.)
+Type="A" - Caracteres em maiúscula do sistema alfabético (A, B, C etc.)-->
