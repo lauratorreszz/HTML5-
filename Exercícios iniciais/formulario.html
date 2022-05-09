@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3</title>
+</head>
+
+<script language="javascript" src=""></script>
+    <script>
+        function calc_total(){
+            var qtd= parseInt(document.getElementById('cQtd').value);
+            total = qtd*1500;
+            document.getElementById('cTot').value=tot;
+        }
+</script>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>SENAI 2022</h1>
+                <H2>A revolução do SENAI está chegando</H2>
+            </hgroup>
+        
+        <img  id=icone src="Imagens/senai.png" alt="Ícone do senai">
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul onmouseout="mudaFoto('contato')">
+                <li onmouseover="mudaFoto('home')"><a href="formulario.html">Home</a></li>
+                <li onmouseover="mudaFoto('especificacoes')"><a href="">Especificações</a></li>
+                <li onmouseover="mudaFoto('fotos')"><a href="">Fotos</a></li>
+                <li onmouseover="mudaFoto('multimidia')"><a href="">Multimídia</a></li>
+                <li onmouseover="mudaFoto('contato')"><a href="">Fale conosco</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <section id="corpoFULL">
+            <article id="noticia_principal">
+               <header id="cabecalho_artigo">
+                  <h3>Fale conosco > Contato</h3>
+                  <h1>Formulário de contato</h1>
+                  <h2>por Laura Torres</h2>
+                  <h3 class="direita">Atualizado em 09/Maio/2022</h3>
+               </header>
+            </article>
+        </section>
+    
+        <form method="POST" id="fContato" oninput="calc_total()">
+            <fieldset id="usuario">
+                <legend>Identificação do Usuário</legend>
+                    <p><label for="cNome">Nome:</label>
+                    <input type="text" name=tNome id="cNome" size="20" maxlength="30" placeholder="Nome completo"/></p>
+                    
+                    <p><label for="cSenha">Senha:</label>
+                        <input type="password" name=tSenha id="cSenha" size="8" maxlength="8" placeholder="Senha"/></p>
+                    
+                    <p><label>E-mail:</label>
+                        <input type="email" name=tEmail id="cEmail" size="20" maxlength="40" placeholder="E-mail"/></p>
+                <fieldset id="sexo">
+                    <legend>Sexo</legend>
+                        <input type="radio" name="tSexo" id="cMas c" checked/><label for="cMasc">Masculino</label><br>
+                        
+                        <input type="radio" name="tSexo" id="cFem"/><label for="cFem" >Feminino</label><br>
+                </fieldset>
+                <p>Data de nascimento: <input type="date" name="tNasc" id="cNasc"/></p>
+            </fieldset>
+
+            <fieldset id="endereco">
+                <legend>Endereço de usuário</legend>
+                <p><label for="cRua">Logradouro</label>
+                    <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trava,..."/></p>
+
+                <p><label for="cNum">Número:</label>
+                    <input type="number" name="tNum" id="cNum" minlength="0" max="99999"/></p>
+
+                <p><label for="cEst">Estado:</label>
+                <select>
+                    <optgroup label="Região Sudeste">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                    
+                    <optgroup label="Região Nordeste">
+                        <option selected value="BA">Bahia</option>
+                    </optgroup>
+                </select>
+                </p>
+
+
+            </fieldset>
+        
+        
+        
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+</html>
