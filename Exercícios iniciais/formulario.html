@@ -22,7 +22,7 @@
                 <h1>SENAI 2022</h1>
                 <H2>A revolução do SENAI está chegando</H2>
             </hgroup>
-        
+
         <img  id=icone src="Imagens/senai.png" alt="Ícone do senai">
         <nav id="menu">
             <h1>Menu Principal</h1>
@@ -46,22 +46,22 @@
                </header>
             </article>
         </section>
-    
+
         <form method="POST" id="fContato" oninput="calc_total()">
             <fieldset id="usuario">
                 <legend>Identificação do Usuário</legend>
                     <p><label for="cNome">Nome:</label>
                     <input type="text" name=tNome id="cNome" size="20" maxlength="30" placeholder="Nome completo"/></p>
-                    
+
                     <p><label for="cSenha">Senha:</label>
                         <input type="password" name=tSenha id="cSenha" size="8" maxlength="8" placeholder="Senha"/></p>
-                    
+
                     <p><label>E-mail:</label>
                         <input type="email" name=tEmail id="cEmail" size="20" maxlength="40" placeholder="E-mail"/></p>
                 <fieldset id="sexo">
                     <legend>Sexo</legend>
                         <input type="radio" name="tSexo" id="cMas c" checked/><label for="cMasc">Masculino</label><br>
-                        
+
                         <input type="radio" name="tSexo" id="cFem"/><label for="cFem" >Feminino</label><br>
                 </fieldset>
                 <p>Data de nascimento: <input type="date" name="tNasc" id="cNasc"/></p>
@@ -81,48 +81,64 @@
                         <option value="RJ">Rio de Janeiro</option>
                         <option value="SP">São Paulo</option>
                     </optgroup>
-                    
+
                     <optgroup label="Região Nordeste">
                         <option selected value="BA">Bahia</option>
                     </optgroup>
                 </select>
                 </p>
 
+                <p><label for="cCid">Cidade:</label>
+                    <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua cidade" list="cidades"/>
+                </p>
 
+                <datalist id="cidades">
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Nova Iguaçu"></option>
+                    <option value="Niterói"></option>
+                </datalist>
             </fieldset>
-        
-        
-        
+            
+            <fieldset id="mensagem">
+                <legend>Mensagem do usuário</legend>
+                <p><label for="cUrg">Grau de urgência:</label>
+                Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>
+                Máx</p>
+                
+                <p><label for="cMsg">Mensagem:</label>
+                <textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+                </p>
+            </fieldset>
+            
+            <fieldset id="pedido">
+                <legend>Quero fazer um curso no SENAI</legend>
+                <p><input type="checkbox" name="tPed" id="cPed" checked/>
+                <label for="cPed">Gostaria de adquirir um curso</label>
+                </p>
+
+                <p><label for="cCor">Cor:</label>
+                <input type="color" name="cCor" id="cCor" value="0000FF"/>
+                </p>
+
+                <p><label for="cQtd">Quantidade:</label>
+                <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"/>
+                </p>
+
+                <p><label for="cTot">Preço total:</label>
+                R$<input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly/>
+                </p>
+            </fieldset>
+
+            <input type="image" name="tEnviar" src="#"/>
+
         </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    <footer id="rodape">
+        <p>Copyright &copy; 2022 - by Laura Torres</p><br>
+        <a href="#" target="_blank">Facebook</a>
+        <a href="#"></a>
+    </footer>
     </div>
 
 </body>
-</html>
+</html> 
