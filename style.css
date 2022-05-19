@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    border: 3px slateblue;
+    border: 2px slateblue;
     border-collapse: collapse;
     display: flex;
     flex-wrap: wrap;
@@ -34,6 +34,52 @@ header h1{
 }
 
 .menu{
-    background-color: rgb(156, 156, 223);
+    background-color: rgb(140, 140, 243);
     font-size: 24px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    padding: 5px 5px;
+    margin: 15px 0px;
+    text-align: center;
+    height: 35px;
+
+}
+
+.menu li{
+    display: flexbox;
+    display: inline-block;
+}
+
+.menu a{
+    color: #462785;
+}
+
+.menu a:hover{
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: overline;
+}
+
+#saude{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    box-sizing: content-box;
+    height: 60%;
+}
+
+#saude img{
+    max-width: 500px;
+    margin: 20px 50px 10px 70px;
+}
+
+#saude p{
+    box-shadow: -1px 1px 10px rgb(126, 28, 126);
+    font-size: 20px;
+    margin: 20px 30px;
+    text-indent: 10px;
+    text-align: center;
+    line-height: 30px;
+    padding: 2px 2px;
+    width: 95%;
 }
