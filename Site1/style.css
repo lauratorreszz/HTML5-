@@ -1,0 +1,232 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+
+body{
+    font-family: 'Roboto Flex', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    background-image: linear-gradient(to bottom, #dbdbff,#9370DB);
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    height: max-content;
+}
+
+header{
+    border: 2px slateblue;
+    border-collapse: collapse;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+#logo{
+    height: px;
+    display: flex;
+    display: inline-block;
+    margin: 5px 20px 5px 10px;
+
+}
+
+header h1{
+    font-size: 40px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px rgb(136, 83, 136);
+
+}
+
+.menu{
+    background-color: rgb(140, 140, 243);
+    font-size: 24px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    padding: 5px 5px;
+    margin: 15px 0px;
+    text-align: center;
+    height: 35px;
+
+}
+
+.menu li{
+    display: flexbox;
+    display: inline-block;
+}
+
+.menu a{
+    color: #462785;
+}
+
+.menu a:hover{
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: overline;
+}
+
+#saude{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    box-sizing: content-box;
+    height: 60%;
+}
+
+#saude img{
+    max-width: 500px;
+    margin: 20px 50px 10px 70px;
+}
+
+#saude p{
+    box-shadow: -1px 1px 10px rgb(62, 28, 126);
+    font-size: 20px;
+    margin: 20px 30px;
+    text-indent: 10px;
+    text-align: center;
+    line-height: 30px;
+    padding: 2px 2px;
+    width: 95%;
+}
+
+.imagem{
+    text-align: center;
+}
+
+.imagem img{
+    max-width: 500px;
+    padding-top: 20px;
+    margin: 20px 50px 10px 70px;
+}
+
+.cabecalho{
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 10px 20px;
+    justify-content: left;
+    align-items: center;
+}
+
+.cabecalho img{
+    width: 55px;
+    margin-right: 10px;
+}
+
+.sobre{
+    background-image: url(Gym-amico.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+
+#content_sobre{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    box-sizing: content-box;
+    height: 60%;
+}
+
+#content_sobre p{
+    box-shadow: -1px 1px 10px rgb(62, 28, 126);
+    font-size: 20px;
+    margin: 20px 30px;
+    text-indent: 10px;
+    text-align: center;
+    line-height: 30px;
+    padding: 2px 2px;
+    width: 95%;
+}
+
+#content_sobre h2{
+    font-size: 30px;
+    margin: 20px 30px;
+    text-align: left;
+}
+
+#content_novidades{
+    text-align: center;
+    align-content: center;
+    align-self: center;
+}
+
+#content_novidades article{
+    display: flow-root;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#content_novidades h2{
+    font-size: 30px;
+    margin: 20px 30px;
+    text-align: left;
+}
+
+#content_novidades p{
+    box-shadow: -1px 1px 10px rgb(62, 28, 126);
+    font-size: 20px;
+    margin: 20px 30px;
+    text-indent: 10px;
+    text-align: justify;
+    line-height: 30px;
+    padding: 2px 2px;
+    width: 95%;
+    display: inline-block;
+
+}
+
+#content_novidades img{
+    max-width: 500px;
+    padding-top: 20px;
+    margin: 20px 50px 10px 70px;
+    text-align: right;
+}
+
+#calc_imc{
+    border: 2px #462785;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 30%;
+    height: 340px;
+    margin: 120px 40px 100px 100px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background-color: #ffffff;
+}
+
+#calc_imc input{
+    width: 60%;
+    height: 40px;
+    margin: 10px 5px  5px;
+    padding: 3px 10px;
+    text-align:center;
+}
+
+#calc_imc label{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#calc_imc button{
+    width: 60%;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    padding: 7px 0px 5px;
+    margin-top: auto;
+    box-shadow: -1px 1px 10px rgb(62, 28, 126);
+    border-radius: 10px;
+    border: none;
+    position: relative;
+}
+
+#calc_imc button:hover{
+    box-shadow: -4px 4px 10px rgb(62, 28, 126);
+    border: 2px rgb(136, 83, 136) ;
+}
+
+.resultado{
+
+}
