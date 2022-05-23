@@ -52,4 +52,11 @@ body{
     height: max-content;
 }
 
-
+header{
+    border: 2px slateblue;
+    border-collapse: collapse;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
